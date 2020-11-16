@@ -94,7 +94,7 @@ static signup su;
         jLabel17.setForeground(new java.awt.Color(51, 51, 51));
         jLabel17.setText("must be all numeric");
         getContentPane().add(jLabel17);
-        jLabel17.setBounds(230, 190, 90, 15);
+        jLabel17.setBounds(230, 190, 90, 17);
 
         countrycode.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "966", "962", "83", "81", "967", "212", "955" }));
         getContentPane().add(countrycode);
@@ -143,7 +143,7 @@ static signup su;
         jLabel3.setForeground(new java.awt.Color(51, 51, 51));
         jLabel3.setText("must be 7 including charcaters and numbers");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(120, 370, 200, 15);
+        jLabel3.setBounds(120, 370, 200, 17);
 
         male.setSelected(true);
         male.setText("male");
@@ -205,7 +205,6 @@ static signup su;
 
         jLabel14.setBackground(new java.awt.Color(255, 255, 255));
         jLabel14.setFont(new java.awt.Font("SF Movie Poster", 1, 18)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setText("confirm");
 
         javax.swing.GroupLayout confirmLayout = new javax.swing.GroupLayout(confirm);
@@ -241,7 +240,7 @@ static signup su;
         jLabel15.setForeground(new java.awt.Color(51, 51, 51));
         jLabel15.setText("must be all in alphates");
         getContentPane().add(jLabel15);
-        jLabel15.setBounds(110, 160, 130, 15);
+        jLabel15.setBounds(110, 160, 130, 17);
 
         jLabel5.setFont(new java.awt.Font("SF Movie Poster", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(51, 51, 51));
@@ -259,7 +258,7 @@ static signup su;
         jLabel16.setForeground(new java.awt.Color(51, 51, 51));
         jLabel16.setText("must be all in alphates");
         getContentPane().add(jLabel16);
-        jLabel16.setBounds(110, 100, 130, 15);
+        jLabel16.setBounds(110, 100, 130, 17);
         getContentPane().add(fname);
         fname.setBounds(10, 90, 90, 30);
         getContentPane().add(jSeparator1);
