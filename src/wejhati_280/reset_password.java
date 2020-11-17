@@ -209,7 +209,7 @@ static String newPass;
                 "SF Movie Poster", Font.BOLD, 20)));
     final JOptionPane pane = new JOptionPane("new password is confiremed");
 
-    final JDialog d = pane.createDialog((JFrame)null, "Confirmation");   d.setLocation(50,300);
+    final JDialog d = pane.createDialog((JFrame)null, "Confirmation");   d.setLocation(530,300);
     d.setVisible(true);
     sn = new sign_in();
     sn.setVisible(true);
@@ -218,7 +218,7 @@ static String newPass;
     sign_up sp = new sign_up();
     signup spp = new signup("b",sp.getUsername(),newPass1,"o","p","p","k");
     sign_linkedlist s = new sign_linkedlist();
-    s.removeStudent(username.getText());
+    //s.removeStudent(username.getText());
     s.addUser(spp);
     spp.setPassword(newPass1);
     fw.write(s.PrintInfo());
