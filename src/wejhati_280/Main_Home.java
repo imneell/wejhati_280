@@ -32,6 +32,7 @@ public class Main_Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
@@ -39,7 +40,10 @@ public class Main_Home extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wejhati_280/gradient.jpg"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(350, 630));
@@ -49,7 +53,7 @@ public class Main_Home extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(51, 51, 51));
         jLabel4.setText("Plan your trip to have");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(90, 330, 300, 40);
+        jLabel4.setBounds(40, 320, 250, 50);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -112,17 +116,21 @@ public class Main_Home extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(51, 51, 51));
         jLabel3.setText("a successful enjoyable trip");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(70, 360, 300, 40);
+        jLabel3.setBounds(30, 360, 340, 40);
 
         jLabel2.setFont(new java.awt.Font("SF Movie Poster", 1, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setText("Wejhati");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(90, 100, 150, 40);
+        jLabel2.setBounds(70, 80, 200, 58);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wejhati_280/gradient.jpg"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 340, 590);
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wejhati_280/plane.png"))); // NOI18N
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(-40, 20, 260, 150);
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wejhati_280/gradient.jpg"))); // NOI18N
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(0, -40, 380, 690);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -187,6 +195,8 @@ public class Main_Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

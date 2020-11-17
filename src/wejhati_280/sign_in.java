@@ -54,8 +54,9 @@ public class sign_in extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jSeparator4 = new javax.swing.JSeparator();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(350, 630));
@@ -67,7 +68,7 @@ public class sign_in extends javax.swing.JFrame {
         getContentPane().add(jSeparator1);
         jSeparator1.setBounds(30, 330, 270, 20);
         getContentPane().add(jSeparator3);
-        jSeparator3.setBounds(230, 360, 80, 20);
+        jSeparator3.setBounds(190, 360, 100, 20);
 
         password.setBorder(null);
         getContentPane().add(password);
@@ -111,7 +112,7 @@ public class sign_in extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(230, 340, 300, 30);
+        jLabel6.setBounds(180, 340, 200, 30);
         getContentPane().add(jSeparator2);
         jSeparator2.setBounds(30, 260, 270, 10);
 
@@ -131,13 +132,17 @@ public class sign_in extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setText("Wejhati");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(90, 100, 150, 40);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wejhati_280/gradient.jpg"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 330, 590);
+        jLabel2.setBounds(70, 100, 190, 40);
         getContentPane().add(jSeparator4);
         jSeparator4.setBounds(230, 360, 80, 20);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wejhati_280/plane.png"))); // NOI18N
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(-30, 20, 260, 150);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wejhati_280/gradient.jpg"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 0, 550, 590);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -232,12 +237,13 @@ public class sign_in extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
