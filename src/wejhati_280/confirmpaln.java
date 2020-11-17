@@ -57,7 +57,7 @@ jLabel4.setText("Time:   "+s2);
         jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(369, 655));
+        setPreferredSize(new java.awt.Dimension(350, 630));
         getContentPane().setLayout(null);
 
         jLabel2.setFont(new java.awt.Font("SF Movie Poster", 1, 48)); // NOI18N
@@ -66,23 +66,32 @@ jLabel4.setText("Time:   "+s2);
         getContentPane().add(jLabel2);
         jLabel2.setBounds(110, 20, 200, 40);
 
+        jLabel1.setFont(new java.awt.Font("SF Movie Poster", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Your new plan is successfully  completed.");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(24, 107, 264, 16);
+        jLabel1.setBounds(24, 107, 290, 19);
 
+        jLabel3.setFont(new java.awt.Font("SF Movie Poster", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("To :");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(24, 154, 330, 16);
+        jLabel3.setBounds(24, 154, 330, 19);
 
+        jLabel4.setFont(new java.awt.Font("SF Movie Poster", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Time:");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(24, 188, 310, 16);
+        jLabel4.setBounds(24, 188, 310, 15);
 
+        jLabel5.setFont(new java.awt.Font("SF Movie Poster", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Date:");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(24, 216, 310, 16);
+        jLabel5.setBounds(24, 216, 310, 15);
 
-        jLabel6.setFont(new java.awt.Font("Lucida Grande", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("SF Movie Poster", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Would you like to check the activities  ");
         getContentPane().add(jLabel6);
         jLabel6.setBounds(10, 370, 360, 37);
@@ -96,16 +105,17 @@ jLabel4.setText("Time:   "+s2);
 
         jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("SF Movie Poster", 1, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Go to Activites");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel11)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addGap(23, 23, 23))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -113,7 +123,7 @@ jLabel4.setText("Time:   "+s2);
         );
 
         getContentPane().add(jPanel5);
-        jPanel5.setBounds(198, 454, 160, 50);
+        jPanel5.setBounds(170, 450, 130, 50);
 
         jPanel6.setBackground(new java.awt.Color(0, 0, 0));
         jPanel6.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -131,10 +141,10 @@ jLabel4.setText("Time:   "+s2);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(62, 62, 62)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addContainerGap(48, Short.MAX_VALUE)
                 .addComponent(jLabel12)
-                .addContainerGap(55, Short.MAX_VALUE))
+                .addGap(41, 41, 41))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -142,9 +152,10 @@ jLabel4.setText("Time:   "+s2);
         );
 
         getContentPane().add(jPanel6);
-        jPanel6.setBounds(6, 454, 160, 50);
+        jPanel6.setBounds(20, 450, 120, 50);
 
-        jLabel14.setFont(new java.awt.Font("Lucida Grande", 0, 12)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("SF Movie Poster", 0, 18)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setText(" in your selected destination?");
         getContentPane().add(jLabel14);
         jLabel14.setBounds(10, 390, 360, 37);
@@ -159,11 +170,11 @@ jLabel4.setText("Time:   "+s2);
 
         jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jSeparator6);
-        jSeparator6.setBounds(0, 80, 380, 12);
+        jSeparator6.setBounds(0, 80, 380, 2);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wejhati_280/gradient.jpg"))); // NOI18N
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(0, 0, 370, 650);
+        jLabel9.setBounds(0, -30, 370, 650);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

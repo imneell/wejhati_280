@@ -34,13 +34,13 @@ FileWriter f;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel5 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
+        jLabel10 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         Date = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
         time = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
         destination = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
@@ -50,26 +50,38 @@ FileWriter f;
         jLabel11 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(369, 655));
         getContentPane().setLayout(null);
-
-        jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 48)); // NOI18N
-        jLabel5.setText("Wejhati");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(90, 10, 182, 58);
-
-        jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jSeparator6);
-        jSeparator6.setBounds(0, 70, 370, 12);
+        jSeparator6.setBounds(0, 70, 370, 2);
 
-        jLabel6.setText("Date of plan:");
+        jLabel10.setFont(new java.awt.Font("SF Movie Poster", 0, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel10.setText("Time:");
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(20, 210, 100, 19);
+
+        jLabel6.setFont(new java.awt.Font("SF Movie Poster", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setText("Destination:");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(20, 120, 100, 16);
+        jLabel6.setBounds(20, 300, 100, 15);
+
+        jLabel9.setFont(new java.awt.Font("SF Movie Poster", 1, 48)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel9.setText("Wejhati");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(100, 20, 150, 40);
+
+        jLabel14.setFont(new java.awt.Font("SF Movie Poster", 0, 18)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel14.setText("Date of plan:");
+        getContentPane().add(jLabel14);
+        jLabel14.setBounds(20, 110, 100, 15);
 
         Date.setText("                DD/MM/YYYY");
-        Date.setOpaque(true);
         Date.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DateActionPerformed(evt);
@@ -77,10 +89,6 @@ FileWriter f;
         });
         getContentPane().add(Date);
         Date.setBounds(40, 150, 230, 50);
-
-        jLabel4.setText("Time:");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(20, 210, 35, 16);
 
         time.setText("        12:  00                     PM");
         time.addActionListener(new java.awt.event.ActionListener() {
@@ -90,10 +98,6 @@ FileWriter f;
         });
         getContentPane().add(time);
         time.setBounds(40, 240, 230, 50);
-
-        jLabel7.setText("Destination:");
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(20, 300, 110, 16);
 
         destination.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,7 +116,8 @@ FileWriter f;
         });
 
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel8.setFont(new java.awt.Font("SF Movie Poster", 0, 18)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("SF Movie Poster", 0, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Activities");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -151,9 +156,9 @@ FileWriter f;
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addGap(35, 35, 35)
                 .addComponent(jLabel12)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -161,7 +166,7 @@ FileWriter f;
         );
 
         getContentPane().add(jPanel6);
-        jPanel6.setBounds(20, 530, 120, 50);
+        jPanel6.setBounds(30, 530, 120, 50);
 
         confirm.setBackground(new java.awt.Color(255, 255, 255));
         confirm.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -172,16 +177,17 @@ FileWriter f;
 
         jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("SF Movie Poster", 1, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Confirm");
 
         javax.swing.GroupLayout confirmLayout = new javax.swing.GroupLayout(confirm);
         confirm.setLayout(confirmLayout);
         confirmLayout.setHorizontalGroup(
             confirmLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(confirmLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, confirmLayout.createSequentialGroup()
+                .addContainerGap(39, Short.MAX_VALUE)
                 .addComponent(jLabel11)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addGap(37, 37, 37))
         );
         confirmLayout.setVerticalGroup(
             confirmLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -197,7 +203,13 @@ FileWriter f;
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wejhati_280/gradient.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 370, 650);
+        jLabel2.setBounds(0, 0, 370, 600);
+
+        jLabel13.setFont(new java.awt.Font("SF Movie Poster", 0, 18)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel13.setText("Date of plan:");
+        getContentPane().add(jLabel13);
+        jLabel13.setBounds(20, 110, 100, 15);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -290,14 +302,15 @@ FileWriter f;
     private javax.swing.JPanel confirm;
     private javax.swing.JTextField destination;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JSeparator jSeparator6;

@@ -35,7 +35,7 @@ boolean isFemale;
 static signup su;
     /** Creates new form sign_up */
     public sign_up() throws IOException {
-        initComponents();     
+        initComponents();        setLocationRelativeTo(null);
         login = new File("login.txt");
          fw = new FileWriter(login,true);   
     }
@@ -271,9 +271,13 @@ static signup su;
         pack();
     }// </editor-fold>//GEN-END:initComponents
 public String isGender (){
+     User user = new User();
+            
     if(isMale==true){
+        user.setGender("Male");
         return "Male";
     }
+            user.setGender("Female");
     return "Female";
 }
 public String getUsername(){
@@ -284,6 +288,7 @@ public String getUsername(){
     }//GEN-LAST:event_phonenoActionPerformed
 
     private void confirmMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_confirmMouseClicked
+signup su = new signup();
 
         isMale = male.isSelected();
         isFemale = female.isSelected();
@@ -291,31 +296,24 @@ public String getUsername(){
         int date=0;
         String gender = isGender();
         int checkStrength=0;
-        if(phoneno.getText().matches("\\d{2}-\\d{3}-\\d{4}")){
+        if(su.isDateMatched(dob.getText())==true){
+            date=1;
+        }else{
+            date=0;
+        }
+        if(date==1&&su.isPhoneMatched(phoneno.getText())==true){
             match=1;
         }else{
             match=0;
         }
-        int same=0;
-        File file = new File ("login.txt");
-        Scanner  read;
-        try {
-            read = new Scanner (file);
-            while(read.hasNext()){
-                String line [] = read.next().split(",");
-                if(line[1].equals(username.getText())){
-                    same=1;
-                }
-            }
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(sign_up.class.getName()).log(Level.SEVERE, null, ex);
-        }
+ 
         if(isFemale==true && isMale==true){
+          
             UIManager.put("OptionPane.messageFont", new FontUIResource(new Font(
                 "SF Movie Poster", Font.BOLD, 20)));
     final JOptionPane pane = new JOptionPane("Please choose only male or female");
     final JDialog d = pane.createDialog((JFrame)null, "");
-    d.setLocation(50,300);
+    d.setLocation(530,300);
     d.setVisible(true);
     }else{
         try {
@@ -330,7 +328,7 @@ public String getUsername(){
             Logger.getLogger(sign_up.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        if(password.getText().length()>=7 && username.getText().matches("^[a-zA-Z0-9]*$") ){
+        if(su.isStrong(password.getText())) {
             checkStrength=1;
         }
         else{
@@ -339,15 +337,15 @@ public String getUsername(){
                 "SF Movie Poster", Font.BOLD, 20)));
     final JOptionPane pane = new JOptionPane("pasword is too weak");
     final JDialog d = pane.createDialog((JFrame)null, "Confirmation");
-    d.setLocation(50,300);
+    d.setLocation(530,300);
     d.setVisible(true);
     }
-    if(same==0&&match==1&&checkStrength==1){
+    if(date==1&&match==1&&checkStrength==1){
         UIManager.put("OptionPane.messageFont", new FontUIResource(new Font(
             "SF Movie Poster", Font.BOLD, 20)));
 final JOptionPane pane = new JOptionPane("Data is stored");
 final JDialog d = pane.createDialog((JFrame)null, "Confirmation");
-d.setLocation(50,300);
+d.setLocation(530,300);
 d.setVisible(true);
 country.setText(null);
 fname.setText(null);
@@ -360,36 +358,30 @@ male.disable();
 female.disable();
 menu1 men = new menu1 ();
 men.setVisible(true);  }
-if(match==0){
+if(date==1&&match==0){
     UIManager.put("OptionPane.messageFont", new FontUIResource(new Font(
         "SF Movie Poster", Font.BOLD, 20)));
         final JOptionPane pane = new JOptionPane("please enter the phone number again as required");
         final JDialog d = pane.createDialog((JFrame)null, "");
-        d.setLocation(50,300);
+        d.setLocation(530,300);
         d.setVisible(true);
         phoneno.setText("XX-XXX-XXXX");
         }
-        if(same==1){
-            UIManager.put("OptionPane.messageFont", new FontUIResource(new Font(
-                "SF Movie Poster", Font.BOLD, 20)));
-    final JOptionPane pane = new JOptionPane("sorry the username exits");
-    final JDialog d = pane.createDialog((JFrame)null, "");
-    d.setLocation(50,300);
-    d.setVisible(true);
-    }
-    /*else{
+    
+}
+   if(date==0){
         UIManager.put("OptionPane.messageFont", new FontUIResource(new Font(
             "SF Movie Poster", Font.BOLD, 20)));
-final JOptionPane pane = new JOptionPane("Sorry, please enter  the data");
+final JOptionPane pane = new JOptionPane("please enter the date again");
 final JDialog d = pane.createDialog((JFrame)null, "");
-d.setLocation(50,300);
+d.setLocation(530,300);
 d.setVisible(true);
-}*/
 }
     }//GEN-LAST:event_confirmMouseClicked
 
     private void cancelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cancelMouseClicked
-
+      Main_Home mh = new Main_Home();
+      mh.setVisible(true);
     }//GEN-LAST:event_cancelMouseClicked
 
     /**

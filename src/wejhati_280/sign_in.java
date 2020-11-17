@@ -27,7 +27,7 @@ public class sign_in extends javax.swing.JFrame {
      * Creates new form sign_in
      */
     public sign_in() {
-        initComponents();
+        initComponents();   setLocationRelativeTo(null);
              username.setBackground(new Color(255,255,255,0));
          password.setBackground(new Color(255,255,255,0));       
     
@@ -177,7 +177,7 @@ public class sign_in extends javax.swing.JFrame {
                         "SF Movie Poster", Font.BOLD, 20)));
             final JOptionPane pane = new JOptionPane("the username is wrong, please try again");
             final JDialog d = pane.createDialog((JFrame)null, "");
-            d.setLocation(50,300);
+            d.setLocation(530,300);
             d.setVisible(true);
         }
         if(usernameCheck==1 && passCheck==0){
@@ -185,7 +185,7 @@ public class sign_in extends javax.swing.JFrame {
                 "SF Movie Poster", Font.BOLD, 20)));
     final JOptionPane pane = new JOptionPane("the password is wrong, please try again");
     final JDialog d = pane.createDialog((JFrame)null, "");
-    d.setLocation(50,300);
+    d.setLocation(530,300);
     d.setVisible(true);
     }
     } catch (FileNotFoundException ex) {

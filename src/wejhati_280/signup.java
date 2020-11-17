@@ -10,12 +10,10 @@ package wejhati_280;
  * @author manar
  */
 public class signup {
-    private String country;
+   
             private String username;
             private String password;
-            private String gender;
-            private int clicked;
-            private int count;
+         
 private signup next;
 
     public signup getNext() {
@@ -25,40 +23,11 @@ private signup next;
     public void setNext(signup next) {
         this.next = next;
     }
-    public signup(int clicked,int count) {
-        this.clicked=clicked++;
-        this.count=count++;
-    }
-
+ 
     public signup() {
         
     }
 
-    public int getClicked() {
-        return clicked;
-    }
-public void setCount(int count) {
-        this.count = count++;
-    }
-    public void setClicked(int clicked) {
-        this.clicked = clicked++;
-    }
-
-    public int getCount() {
-        return count;
-    }
-public void printCount(){
-    System.out.println(this.getCount());
-}
-    
-        
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
 
     public String getUsername() {
         return username;
@@ -76,13 +45,7 @@ public void printCount(){
         this.password = password;
     }
 
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
+    
 
     public String getPhoeno() {
         return phoeno;
@@ -112,13 +75,20 @@ public void printCount(){
             private String lname;
 
     public signup(String country, String username, String password, String gender, String phoeno, String fname, String lname) {
-        this.country = country;
         this.username = username;
         this.password = password;
-        this.gender = gender;
         this.phoeno = phoeno;
         this.fname = fname;
         this.lname = lname;
     }
-            
+    public boolean isDateMatched(String date){
+      return date.matches("\\d{2}/\\d{2}/\\d{4}");
+      
+    }
+     public boolean isPhoneMatched(String phone){
+         return phone.matches("\\d{2}-\\d{3}-\\d{4}");
+     }       
+     public boolean isStrong (String pass){
+         return (pass.length()>=7 && pass.matches("^[a-zA-Z0-9]*$"));
+     }
 }

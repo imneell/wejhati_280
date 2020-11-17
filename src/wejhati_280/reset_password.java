@@ -31,7 +31,7 @@ static String newPass;
      * Creates new form reset_password
      */
     public reset_password() {
-        initComponents();
+        initComponents();   setLocationRelativeTo(null);
     }
 
     /**
@@ -167,23 +167,21 @@ static String newPass;
             File file = new File("login.txt");
             Scanner read;
             int usernameCheck=0;
-            read = new Scanner (file);
-            while(read.hasNext()){
-                line= read.next().split(",");
-                if(line[1].equals(username.getText())){
+          
+                if("imneell".equals(username.getText())){
 
                     usernameCheck=1;
                 }else{
                     usernameCheck=0;
                 }
-            }
+            
             if(usernameCheck==0){
 
                 UIManager.put("OptionPane.messageFont", new FontUIResource(new Font(
                     "SF Movie Poster", Font.BOLD, 20)));
-        final JOptionPane pane = new JOptionPane("the username is wrong, please try again to reset the password");
+        final JOptionPane pane = new JOptionPane("the username is wrong,"+"\n"+"please try again to reset the password");
         final JDialog d = pane.createDialog((JFrame)null, "");
-        d.setLocation(6,300);
+        d.setLocation(530,300);
         d.setVisible(true);
         }
         if(usernameCheck==1&&password.getText().length()>=7 && username.getText().matches("^[a-zA-Z0-9]*$") ){
@@ -201,7 +199,7 @@ static String newPass;
                 UIManager.put("OptionPane.messageFont", new FontUIResource(new Font(
                     "SF Movie Poster", Font.BOLD, 20)));
         final JOptionPane pane = new JOptionPane("password doesn't match the new password");
-        final JDialog d = pane.createDialog((JFrame)null, "");   d.setLocation(50,300);
+        final JDialog d = pane.createDialog((JFrame)null, "");   d.setLocation(530,300);
         d.setVisible(true);
         }
         }
@@ -232,7 +230,7 @@ final JOptionPane pane = new JOptionPane("password too weak");
 final JDialog d = pane.createDialog((JFrame)null, "");   d.setLocation(50,300);
 d.setVisible(true);
 }
-read.close();
+
 } catch (FileNotFoundException ex) {
     Logger.getLogger(reset_password.class.getName()).log(Level.SEVERE, null, ex);} catch (IOException ex) {
     Logger.getLogger(reset_password.class.getName()).log(Level.SEVERE, null, ex);

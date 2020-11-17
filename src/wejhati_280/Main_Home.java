@@ -20,7 +20,7 @@ public class Main_Home extends javax.swing.JFrame {
      * Creates new form Main_Home
      */
     public Main_Home() {
-        initComponents();
+        initComponents();   setLocationRelativeTo(null);
     }
 
     /**

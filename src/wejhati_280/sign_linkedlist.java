@@ -58,10 +58,10 @@ private int count=0;
      
         signup helpPtr = head;
         System.out.println("");
-String append="";
+          String append="";
         while (helpPtr != null) {
 
-          append+= count++ +" username"+","+helpPtr.getUsername()+","+"password"+","+helpPtr.getPassword()+","+"country"+","+helpPtr.getCountry()+","+"fname"+","+helpPtr.getFname()+","+"lname"+","+helpPtr.getLname()+","+"Phoneno"+","+helpPtr.getPhoeno()+"\n";
+          append+= count++ +" username"+","+helpPtr.getUsername()+","+"password"+","+helpPtr.getPassword()+","+"fname"+","+helpPtr.getFname()+","+"lname"+","+helpPtr.getLname()+","+"Phoneno"+","+helpPtr.getPhoeno()+"\n";
    
             helpPtr = helpPtr.getNext(); // to go to the next node
 

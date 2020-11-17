@@ -49,8 +49,8 @@ while((a=r2.readLine())!=null){
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel5 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
+        jLabel9 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
@@ -66,17 +66,16 @@ while((a=r2.readLine())!=null){
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(369, 655));
+        setPreferredSize(new java.awt.Dimension(350, 630));
         getContentPane().setLayout(null);
-
-        jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 48)); // NOI18N
-        jLabel5.setText("Wejhati");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(93, 24, 182, 58);
-
-        jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jSeparator6);
-        jSeparator6.setBounds(0, 80, 380, 12);
+        jSeparator6.setBounds(0, 80, 380, 2);
+
+        jLabel9.setFont(new java.awt.Font("SF Movie Poster", 1, 48)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel9.setText("Wejhati");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(100, 20, 150, 40);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wejhati_280/bar_icon.png"))); // NOI18N
         getContentPane().add(jLabel3);
@@ -115,7 +114,7 @@ while((a=r2.readLine())!=null){
         );
 
         getContentPane().add(jPanel6);
-        jPanel6.setBounds(6, 509, 159, 50);
+        jPanel6.setBounds(6, 509, 151, 50);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -138,23 +137,23 @@ while((a=r2.readLine())!=null){
         );
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(183, 507, 171, 52);
+        jPanel1.setBounds(183, 507, 136, 52);
 
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(30, 170, 310, 16);
+        jLabel1.setBounds(30, 170, 310, 15);
 
         jLabel6.setText("jLabel3");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(30, 190, 310, 16);
+        jLabel6.setBounds(30, 190, 310, 15);
 
         jLabel7.setText("jLabel6");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(30, 210, 300, 16);
+        jLabel7.setBounds(30, 210, 300, 15);
 
         jLabel8.setText("jLabel7");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(30, 230, 320, 16);
+        jLabel8.setBounds(30, 230, 320, 15);
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -162,11 +161,11 @@ while((a=r2.readLine())!=null){
         jScrollPane1.setViewportView(jTextArea1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(10, 270, 330, 200);
+        jScrollPane1.setBounds(0, 270, 330, 200);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wejhati_280/gradient.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, -145, 370, 940);
+        jLabel2.setBounds(0, -170, 370, 940);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -222,10 +221,10 @@ while((a=r2.readLine())!=null){
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;

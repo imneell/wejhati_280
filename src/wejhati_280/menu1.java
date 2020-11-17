@@ -15,7 +15,7 @@ public class menu1 extends javax.swing.JFrame {
      * Creates new form menu1
      */
     public menu1() {
-        initComponents();
+        initComponents();   setLocationRelativeTo(null);
     }
 
     /**
@@ -130,7 +130,7 @@ public class menu1 extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wejhati_280/gradient.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 330, 610);
+        jLabel1.setBounds(0, 0, 330, 600);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
